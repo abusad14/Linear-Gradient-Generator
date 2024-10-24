@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #00ffff, #90ee90, #000000);
+}
+main {
+  height: 50%;
+  width: 50%;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: justify;
+  /* padding: 2%; */
+}
+.heading-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  /* margin: 20px; */
+}
+.heading1 {
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 21px;
+  /* text-shadow: 2px 8px 10px black; */
+}
+
+.heading2 {
+  /* margin-bottom: 15px; */
+  letter-spacing: 2px;
+  font-size: 21px;
+}
+.content-container {
+  height: 30%;
+  width: 50%;
+  border-left: 4px solid darkred;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(250, 235, 215, 0.441);
+}
+.content-container:hover {
+  cursor: text;
+  background-color: antiquewhite;
+}
+.btn1,
+.btn2,
+.btn3 {
+  height: 30px;
+  width: 100px;
+  margin: 5px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  /* font-weight: 550; */
+}
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
+  box-shadow: 2px 2px 15px black;
+  cursor: pointer;
+}
+.btn1 {
+  background-color: salmon;
+}
+.btn2 {
+  background-color: lightblue;
+}
+.btn3 {
+  background-color: lightslategray;
+}
+.content-container h3 {
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-size: 20px;
+  text-align: center;
+}
+.copy {
+  font-size: 23px;
+  letter-spacing: 3px;
+}
+@media (max-width: 600px) {
+  body {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #00ffff, #90ee90, #000000);
+  }
+  main {
+    height: 100%;
+    width: 100%;
+  }
+  .copy {
+    /* color: red; */
+    font-size: 5vw;
+  }
+
+  .heading1 h1 {
+    /* color: red; */
+    font-size: 11vw;
+  }
+  .heading2 h2 {
+    /* color: blueviolet; */
+    font-size: 7vw;
+    /* letter-spacing: 1px; */
+    text-align: center;
+  }
+  .content-container {
+    height: 20%;
+    width: 90%;
+    border-left: 4px solid darkred;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(250, 235, 215, 0.441);
+  }
+  .content {
+    font-size: 1vw;
+  }
+}
